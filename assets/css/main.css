@@ -71,6 +71,66 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+/* Container */
+
+.container {
+	margin: 0 auto;
+	max-width: calc(100% - 50px);
+	width: 1200px;
+}
+
+	.container.medium {
+		width: 900px;
+	}
+
+	@media screen and (max-width: 1680px) {
+
+		.container {
+			width: 1200px;
+		}
+
+			.container.medium {
+				width: 900px;
+			}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.container {
+			width: 960px;
+		}
+
+			.container.medium {
+				width: 720px;
+			}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.container {
+			width: 100%;
+		}
+
+			.container.medium {
+				width: 75%;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.container {
+			width: 100%;
+			max-width: calc(100% - 30px);
+		}
+
+			.container.medium {
+				width: 100%;
+			}
+
+	}
 
 /* Basic */
 
@@ -99,13 +159,14 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fff;
+		color: rgb(2, 14, 48);
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 15pt;
-		font-weight: 300 !important;
+		font-size: 14pt;
+		font-weight: 200 !important;
 		letter-spacing: -0.025em;
 		line-height: 1.75em;
 	}
+
 
 	a {
 		-moz-transition: border-color 0.2s ease-in-out;
@@ -226,13 +287,14 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #348cb2 url("images/bg2.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
-		opacity: 1;
+		opacity: 0.5;
 		position: fixed;
 		top: 0;
+		
 	}
 
 	@-moz-keyframes bg {
@@ -303,6 +365,14 @@ input, select, textarea {
 		background-size: 2250px auto;
 		width: 6750px;
 	}
+
+	img.avatar{
+		height:150px;
+		width:150px;
+		border-radius:50%;
+		vertical-align: middle;
+		}
+
 
 /* Overlay */
 
@@ -531,10 +601,10 @@ input, select, textarea {
 	}
 
 	#header {
-		-moz-animation: header 1s 2.25s forwards;
-		-webkit-animation: header 1s 2.25s forwards;
-		-ms-animation: header 1s 2.25s forwards;
-		animation: header 1s 2.25s forwards;
+		-moz-animation: header 1s 0.25s forwards;
+		-webkit-animation: header 1s 0.25s forwards;
+		-ms-animation: header 1s 0.25s forwards;
+		animation: header 1s 0.25s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -555,7 +625,7 @@ input, select, textarea {
 
 		#header h1 {
 			font-size: 4.35em;
-			font-weight: 900;
+			font-weight: 600;
 			letter-spacing: -0.035em;
 			line-height: 1em;
 		}
@@ -563,7 +633,10 @@ input, select, textarea {
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+		    color: rgb(2, 14, 48);
+			font-weight: 400;
+			
+			/* opacity: 0.75; */
 		}
 
 		#header nav {
@@ -571,10 +644,10 @@ input, select, textarea {
 		}
 
 			#header nav li {
-				-moz-animation: nav-icons 0.5s ease-in-out forwards;
-				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
-				-ms-animation: nav-icons 0.5s ease-in-out forwards;
-				animation: nav-icons 0.5s ease-in-out forwards;
+				-moz-animation: nav-icons 0.25s ease-in-out forwards;
+				-webkit-animation: nav-icons 0.25s ease-in-out forwards;
+				-ms-animation: nav-icons 0.25s ease-in-out forwards;
+				animation: nav-icons 0.25s ease-in-out forwards;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -593,52 +666,52 @@ input, select, textarea {
 			}
 
 				#header nav li:nth-child(1) {
-					-moz-animation-delay: 2.5s;
-					-webkit-animation-delay: 2.5s;
-					-ms-animation-delay: 2.5s;
-					animation-delay: 2.5s;
+					-moz-animation-delay: 0.5s;
+					-webkit-animation-delay: 0.5s;
+					-ms-animation-delay: 0.5s;
+					animation-delay: 0.5s;
 				}
 
 				#header nav li:nth-child(2) {
-					-moz-animation-delay: 2.75s;
-					-webkit-animation-delay: 2.75s;
-					-ms-animation-delay: 2.75s;
-					animation-delay: 2.75s;
+					-moz-animation-delay: 0.75s;
+					-webkit-animation-delay: 0.75s;
+					-ms-animation-delay: 0.75s;
+					animation-delay: 0.75s;
 				}
 
 				#header nav li:nth-child(3) {
-					-moz-animation-delay: 3s;
-					-webkit-animation-delay: 3s;
-					-ms-animation-delay: 3s;
-					animation-delay: 3s;
+					-moz-animation-delay: 1s;
+					-webkit-animation-delay: 1s;
+					-ms-animation-delay: 1s;
+					animation-delay: 1s;
 				}
 
 				#header nav li:nth-child(4) {
-					-moz-animation-delay: 3.25s;
-					-webkit-animation-delay: 3.25s;
-					-ms-animation-delay: 3.25s;
-					animation-delay: 3.25s;
+					-moz-animation-delay: 1.25s;
+					-webkit-animation-delay: 1.25s;
+					-ms-animation-delay: 1.25s;
+					animation-delay: 1.25s;
 				}
 
 				#header nav li:nth-child(5) {
-					-moz-animation-delay: 3.5s;
-					-webkit-animation-delay: 3.5s;
-					-ms-animation-delay: 3.5s;
-					animation-delay: 3.5s;
+					-moz-animation-delay: 1.5s;
+					-webkit-animation-delay: 1.5s;
+					-ms-animation-delay: 1.5s;
+					animation-delay: 1.5s;
 				}
 
 				#header nav li:nth-child(6) {
-					-moz-animation-delay: 3.75s;
-					-webkit-animation-delay: 3.75s;
-					-ms-animation-delay: 3.75s;
-					animation-delay: 3.75s;
+					-moz-animation-delay: 1.75s;
+					-webkit-animation-delay: 1.75s;
+					-ms-animation-delay: 1.75s;
+					animation-delay: 1.75s;
 				}
 
 				#header nav li:nth-child(7) {
-					-moz-animation-delay: 4s;
-					-webkit-animation-delay: 4s;
-					-ms-animation-delay: 4s;
-					animation-delay: 4s;
+					-moz-animation-delay: 2s;
+					-webkit-animation-delay: 2s;
+					-ms-animation-delay: 2s;
+					animation-delay: 2s;
 				}
 
 				#header nav li:nth-child(8) {
